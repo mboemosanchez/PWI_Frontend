@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div name="Formulario">
+        <h1>Completa con tus datos</h1>
+        <form action="" method="">
+            <p>
+                <label>Nombre y apellido:</label><br>
+                <input type="text" name="contactsName" placeholder="Ingresa tu nombre completo y apellido"/>
+            </p>
+
+            <p>
+                <label>Email:</label><br>
+                <input type="text" name="contactsName" placeholder="Ingresa tu correo electronico"/>
+            </p>
+
+            <p>
+                <label>Género</label>
+                <ul>
+                    <li>
+                        <input type="radio" name="gender" value="male">
+                        <label>Masculino</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="gender" value="female">
+                        <label>Femenino</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="gender" value="nonbinary">
+                        <label>No binario</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="gender" value="notspecified">
+                        <label>Prefiero no especificar</label>
+                    </li>
+                </ul>
+            </p>
+
+            <p>
+                <label>Animal/es favorito/s</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="favouriteAnimals[]" value="dog" id="dog">
+                        <label>Perro</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="favouriteAnimals[]" value="cat" id="cat">
+                        <label>Gato</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="favouriteAnimals[]" value="turtle" id="turtle">
+                        <label>Tortuga</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="favouriteAnimals[]" value="parrot" id="parrot">
+                        <label>Loro</label>
+                    </li>
+                </ul>
+            </p>
+
+            <p>
+                <label>Consola favorita de videojuegos</label><br>
+                <select name="favouriteConsole">
+                    <option value="Nsw">Nintendo Switch</option>
+                    <option value="Ps5">Playstation 5</option>
+                    <option value="Xbox">Xbox Series X</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Comentarios</label><br>
+                <textarea name="comments" placeholder="Deja tu comentario..."></textarea>
+            </p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar todo"></input>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
