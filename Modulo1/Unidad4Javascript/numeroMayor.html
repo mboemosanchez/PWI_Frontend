@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            var arrayDeNumeros = [10, 2, 3, 5, 650, 800, 30, 659, 750, 233];
+        </script>
+
+        <p>Vamos a sacar el número maximo del array compuesto por: </p>
+        <script>
+            arrayDeNumeros.forEach(element => document.write(element + " "));
+        </script>
+        <h1>El valor máximo es: <script>document.write(Math.max.apply(null, arrayDeNumeros));</script></h1>
+        <br>
+        <p>O con bucle utilizando for...</p>
+        <script>
+            var max = arrayDeNumeros[0];
+             for (var i = 1; i < arrayDeNumeros.length; i++) {
+                if (arrayDeNumeros[i] > max) {
+                    max = arrayDeNumeros[i];
+                }
+            }
+        </script>
+        <h1>El valor máximo sigue siendo: <script>document.write(max);</script></h1>
+    </body>
+
+</html>

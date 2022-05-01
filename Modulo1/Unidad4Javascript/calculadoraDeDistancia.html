@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mejor medio de transporte según distancia</title>
+    </head>
+
+    <body>
+        <script>
+
+            var keepPrompting = true;
+
+            do {
+                try {
+
+                    var distanciaIngresada = parseInt(prompt("Ingrese la distancia que desea evaluar", ''));
+
+                    if (distanciaIngresada >= 0) {
+                        keepPrompting = false;
+                    }
+                    else {
+                        document.write("Solo puede ingresar numeros enteros positivos.");
+                        keepPrompting = true;
+                    }
+                }
+                catch (error) {
+                    print("Solo puede ingresar numeros enteros positivos.");
+                    keepPrompting = true;
+                }
+            } while (keepPrompting);
+
+            if (0 <= distanciaIngresada && distanciaIngresada <= 1000)
+                document.write("Mejor medio de transporte: a pie!");
+            else if (distanciaIngresada <= 10000)
+                document.write("Mejor medio de transporte: bicicleta");
+            else if (distanciaIngresada <= 30000)
+                document.write("Mejor medio de transporte: colectivo.");
+            else if (distanciaIngresada <= 100000)
+                document.write("Mejor medio de transporte: auto.");
+            else
+                document.write("Mejor medio de transporte: avion.");
+
+
+        </script>
+    </body>
+
+</html>
