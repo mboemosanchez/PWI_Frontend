@@ -1,0 +1,218 @@
+body {
+    background-image: url("https://www.zelda.com/breath-of-the-wild/assets/img/patterns/black.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /*Important*/
+    background-color: #291818;
+    margin: 0 auto;
+
+}
+
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.spikes {
+    position: absolute;
+    background: #291818;
+    height: 250px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20%;
+}
+
+.spikes::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 50px;
+    background-size: 50px 100%;
+    background-image: linear-gradient(135deg, #291818 25%, transparent 25%), linear-gradient(225deg, #291818 25%, transparent 25%);
+    background-position: 0 0;
+}
+
+hr.solid {
+    border-top: 3px solid #f5c764;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0.5%;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4vw;
+    color: #f5c764;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+h2 {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5vw;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.revealUp {
+    opacity: 0;
+    visibility: hidden;
+}
+
+p {
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.photosContainer {
+    width: 100%;
+    margin-top: 15%;
+    display: block;
+    overflow: hidden;
+}
+
+.carousel {
+    display: block;
+    width: 100%;
+    height: 280px;
+    background: transparent;
+    overflow-x: scroll;
+    padding: 10px;
+    margin: 0;
+    white-space: nowrap;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    display: inline-block;
+    width: 10%;
+    margin: 0 10px;
+    height: 242px;
+    background: rgba(0, 0, 0, 0.05) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #f5c764;
+}
+
+.item div {
+    width: 100%;
+    top: 10%;
+    position: absolute;
+    text-align: center;
+    font-size: 9em;
+    color: white;
+}
+
+.item h1 {
+    top: 50%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgba(41, 24, 24, 0.7);
+}
+
+#zelda1986 {
+    background-image: url(img/Legend_of_zelda_cover_\(with_cartridge\)_gold.png);
+}
+
+#zelda1987 {
+    background-image: url(img/Zelda_II_The_Adventure_of_Link_box.jpg);
+}
+
+#zelda1998 {
+    background-image: url(img/The_Legend_of_Zelda_Ocarina_of_Time.jpg);
+}
+
+#zelda2000 {
+    background-image: url(img/The_Legend_of_Zelda_-_Majoras_Mask_Box_Art.jpg)
+}
+
+#zelda2006 {
+    background-image: url(img/The_Legend_of_Zelda_Twilight_Princess_Game_Cover.jpg)
+}
+
+#zelda2017 {
+    background-image: url(img/The_Legend_of_Zelda_Breath_of_the_Wild.jpg)
+}
+
+#zelda2019 {
+    background-image: url(img/the-legend-of-zelda-links-awakening-review-press-image-1.jpg)
+}
+
+#zelda2020 {
+    background-image: url(img/hyrule-warriors-aoc.png)
+}
+
+#zelda2021 {
+    background-image: url(img/the-legend-of-zelda-skyward-sword-hd-202121809125_21.jpg)
+}
+
+#zelda2023 {
+    background-image: url(img/60c8e1c8e7786.jpeg)
+}
+
+.gamesContainer {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gameInfo{
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 5%;
+    background-color: rgba(41, 24, 24, 0.9);
+}
+
+.gameInfo p{
+    width: 55%;
+    height: 100%;
+    float: right;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.gamePhoto{
+    width: 35%;
+    margin: 0 10px;
+    height: 342px;
+    background: rgba(0, 0, 0, 0.05) no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #f5c764;
+    float: left;
+    margin: 10px;
+}
